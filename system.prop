@@ -1,0 +1,4 @@
+# system.prop for Breadvm
+persist.sys.timezone=Asia/Shanghai
+#dalvik.vm.checkjni=false       disable in code
+#ro.kernel.android.checkjni=0

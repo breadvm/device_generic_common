@@ -1,0 +1,7 @@
+/dev/block/sda6			/system	ext4	ro			wait
+/dev/block/sdb1			/cache	ext4	nosuid,nodev		wait
+/dev/block/sdb3			/data	ext4	nosuid,nodev		wait
+/devices/*/block/sr*		auto	auto	defaults		voldmanaged=cdrom:auto
+/devices/*/usb*/*		auto	auto	defaults		voldmanaged=usb:auto,encryptable=userdata
+/devices/*/*sdmmc*/*		auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata
+/devices/*/80860F14:01/mmc_*	auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata
