@@ -10,12 +10,7 @@ LOCAL_SRC_FILES := \
     gl2_enc.cpp \
     gl2_entry.cpp
 
-LOCAL_CFLAGS += -DLOG_TAG=\"emuglGLESv2_enc\" -D_STLP_USE_MALLOC 
-LOCAL_LDFLAGS += -Wl,-v
-LOCAL_SHARED_LIBRARIES += libstlport
-#LOCAL_CPPFLAGS += -std=c++11
-#LOCAL_SHARED_LIBRARIES += libstlport
-#x86_64-linux-android-g++
+LOCAL_CFLAGS += -DLOG_TAG=\"emuglGLESv2_enc\"
 
 $(call emugl-export,C_INCLUDES,$(LOCAL_PATH))
 $(call emugl-import,libOpenglCodecCommon)

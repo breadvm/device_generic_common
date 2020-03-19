@@ -7,8 +7,6 @@ LOCAL_SRC_FILES := \
     renderControl_enc.cpp \
     renderControl_entry.cpp
 
-LOCAL_CFLAGS += -DLOG_TAG=\"emuglrenderControl_enc\" -D_STLP_USE_MALLOC 
-
 $(call emugl-export,C_INCLUDES,$(LOCAL_PATH))
 $(call emugl-import,libOpenglCodecCommon)
 $(call emugl-end-module)

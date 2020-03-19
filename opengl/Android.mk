@@ -22,7 +22,7 @@ EMUGL_COMMON_INCLUDES := $(EMUGL_PATH)/host/include/libOpenglRender
 # This is always set to a module's LOCAL_CFLAGS
 # See the definition of emugl-begin-module in common.mk
 #
-EMUGL_COMMON_CFLAGS := -DWITH_GLES2
+EMUGL_COMMON_CFLAGS := -DWITH_GLES2 -DPLATFORM_SDK_VERSION=$(PLATFORM_SDK_VERSION)
 
 # Uncomment the following line if you want to enable debug traces
 # in the GLES emulation libraries.

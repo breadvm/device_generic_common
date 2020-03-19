@@ -15,7 +15,7 @@ commonSources := \
 $(call emugl-begin-static-library,libOpenglCodecCommon)
 
 LOCAL_SRC_FILES := $(commonSources)
-LOCAL_CPPFLAGS += -std=c++0x
+
 LOCAL_CFLAGS += -DLOG_TAG=\"eglCodecCommon\"
 
 $(call emugl-export,SHARED_LIBRARIES,libcutils libutils liblog)

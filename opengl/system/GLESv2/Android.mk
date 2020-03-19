@@ -5,7 +5,7 @@ $(call emugl-begin-shared-library,libGLESv2_xxbos)
 $(call emugl-import,libOpenglSystemCommon libGLESv2_enc lib_renderControl_enc)
 
 LOCAL_CFLAGS += -DLOG_TAG=\"GLESv2_xxbos\" -DGL_GLEXT_PROTOTYPES
-LOCAL_SHARED_LIBRARIES += libstlport
+
 LOCAL_SRC_FILES := gl2.cpp
 LOCAL_MODULE_RELATIVE_PATH := egl
 
